@@ -2,6 +2,8 @@
 
 This repository contains a Python-based simulation of the **Furuta Pendulum** (rotary inverted pendulum) using **MuJoCo**. The project demonstrates both swing-up control and stabilization of the pendulum, providing a testbed for control algorithms and reinforcement learning experiments.
 
+LQR (Linear Quadratic Regulator) is used to stabilize the Furuta Pendulum near its upright position. It computes the optimal torque by minimizing deviations from the target state while keeping control effort small. By linearizing the pendulum dynamics around the upright point, LQR provides a simple yet efficient way to balance the pendulum. This makes it ideal for combining with a swing-up controller to achieve full control from hanging to upright.
+
 ---
 
 ![mujuco_furuta_pendulum](https://github.com/user-attachments/assets/34fe1037-a293-4439-8590-4e9fed6ec0e4)
